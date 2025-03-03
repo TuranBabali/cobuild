@@ -1,0 +1,140 @@
+{% load static %}
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       
+        <meta name="author" content="zytheme" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Html5 Construction Landing Page">
+        <link href="{% static '' %}images/favicon/favicon.ico" rel="icon">
+       
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,600,700,800%7CLora:400,400i,700,700i" rel="stylesheet">
+        
+        <link href="{% static 'css/external.css' %}" rel="stylesheet">
+        <link href="{% static 'css/cons.css' %}" rel="stylesheet">
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        
+        <title>Cobuild | Html5 Construction Landing Page</title>
+    </head>
+    <body class="body-scroll">
+        <!-- Document Wrapper
+            ============================================= -->
+        <div id="wrapper" class="wrapper clearfix">
+            <!-- Header
+                ============================================= -->
+            <header id="navbar-spy" class="header header-1 header-transparent header-fixed">
+                <nav id="primary-menu" class="navbar navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                            <a class="logo" href="index-2.html">
+                            <img class="logo-dark" src="{% static 'images/logo/logo-dark.png' %}" alt="Logo">
+                            <img class="logo-light" src="{% static 'images/logo/logo-light.png' %}" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse pull-right" id="navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-left nav-split nav-pos-right">
+                                <li class="active"><a data-scroll="scrollTo" href="#hero">home</a>
+                                </li>
+                                <li><a data-scroll="scrollTo" href="#feature">services</a>
+                                </li>
+                                <li><a data-scroll="scrollTo" href="#portfolio">Work</a>
+                                </li>
+                                <li><a data-scroll="scrollTo" href="#skills">Skills</a>
+                                </li>
+                                <li><a data-scroll="scrollTo" href="#testimonials">Testimonials</a>
+                                </li>
+                                <li><a data-scroll="scrollTo" href="#map">Map</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </nav>
+            </header>
+            {% block body %}
+            {% endblock %}
+            <footer id="footer9" class="footer footer-5 footer-8 footer-9 bg-white text-center-xs pt-0 pb-0">
+                <div class="footer-widget">
+                    <div class="container">
+                        <div class="row widget--boxes text-center">
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <div class="widget--info-box">
+                                    <i class="ti-home"></i>
+                                    <h4>Address</h4>
+                                    <p>220 Petersham town, Wardell<br>street, Australia PA 6550. </p>
+                                </div>
+                                <!-- .widget-info-box end -->
+                            </div>
+                            <!-- .col-md-4 end -->
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <div class="widget--info-box">
+                                    <i class="ti-mobile"></i>
+                                    <h4>Phone</h4>
+                                    <p>Phone: (04) 491 570 110</p>
+                                    <p>Fax: +04 642 021 332</p>
+                                </div>
+                                <!-- .widget-info-box end -->
+                            </div>
+                            <!-- .col-md-4 end -->
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <div class="widget--info-box">
+                                    <i class="ti-email"></i>
+                                    <h4>Email</h4>
+                                    <p>support@zytheme.com</p>
+                                    <p>Twitter: @zytheme</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .footer-widget end -->
+                <div class="footer-bar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="widget--copyright">
+                                    <span>&copy; Zytheme 2016, All Rights Reserved.</span>
+                                </div>
+                            </div>
+                            <!-- .col-md-6 end -->
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="widget--social text-right text-center-xs">
+                                    <a class="facebook" href="#">
+                                    <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a class="twitter" href="#">
+                                    <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a class="dribbble" href="#">
+                                    <i class="fa fa-dribbble"></i>
+                                    </a>
+                                    <a class="instagram" href="#">
+                                    <i class="fa fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- .col-md-6 end -->
+                        </div>
+                        <!-- .row end -->
+                    </div>
+                    <!-- .container end -->
+                </div>
+                <!-- .footer bar end -->
+            </footer>
+            <!-- #footer9 end -->
+        </div>
+        <script src="{% static 'js/jquery-2.2.4.min.js' %}"></script>
+        <script src="{% static 'js/plugins.js' %}"></script>
+        <script src="{% static 'js/functions.js' %}"></script>
+    </body>
+</html>
